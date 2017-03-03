@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{321A07FF-8513-3D5E-B402-AF4FA0A96E88}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\EXTRA ASSESTS\Prototype Assets\scriptShooter.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\Joystick.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\ObliqueNear.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\PlayerRelativeControl.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\RollABall.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\RotationConstraint.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\SidescrollControl.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\SmoothFollow2D.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\ZoomCamera.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Scripts\tapcontrol.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Scripts\Camera Scripts\MouseOrbit.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
+     <Compile Include="Assets\EXTRA ASSESTS\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\Compass.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\CompassMovement.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\DEVELOPER Scripts.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\DoorMechanics.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\HUD.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\Inventory.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\IslandTriggers.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\NPCMoveBehaviour.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\Player Walk Audio.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\PlayerCollisions.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\PlayerInstructions.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\PlayerTracking.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\PowerCell.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\SafeArea.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\TextHints.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\TorchGhostBurn.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\TorchLight.js" />
+     <Compile Include="Assets\THE LOST LANDS\Scripts\TriggerZone.js" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Nobiax Free Rocks\Nobiax Free Rocks.txt" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\EXTRA ASSESTS\torch\readme.txt" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\EXTRA ASSESTS\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+ <Reference Include="uScriptRuntime">
+ <HintPath>Assets\EXTRA ASSESTS\_makeYOURlevel_LITE\PREFAB_makeYOURlevel_LITE\6_scripts\uScriptRuntime\uScriptRuntime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
