@@ -46,11 +46,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SCRIPTS\Bullet.cs" />
-     <Compile Include="Assets\SCRIPTS\Combat.cs" />
-     <Compile Include="Assets\SCRIPTS\EnemySpawner.cs" />
-     <Compile Include="Assets\SCRIPTS\HealthBar.cs" />
-     <Compile Include="Assets\SCRIPTS\PlayerMove.cs" />
+     <Compile Include="Assets\SCRIPTS\Camera\CameraMove.cs" />
+     <Compile Include="Assets\SCRIPTS\Combat\Bullet.cs" />
+     <Compile Include="Assets\SCRIPTS\Combat\CombatScript.cs" />
+     <Compile Include="Assets\SCRIPTS\Combat\HealthBar.cs" />
+     <Compile Include="Assets\SCRIPTS\Combat\ShootingScript.cs" />
+     <Compile Include="Assets\SCRIPTS\GameManager\Game.cs" />
+     <Compile Include="Assets\SCRIPTS\Heroes\Hero.cs" />
+     <Compile Include="Assets\SCRIPTS\Heroes\SpawnHeroes.cs" />
+     <Compile Include="Assets\SCRIPTS\NPCs\EnemySpawner.cs" />
+     <Compile Include="Assets\SCRIPTS\Player\PlayerMove.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>G:/Unity/BETRAYAL/Betrayal/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
