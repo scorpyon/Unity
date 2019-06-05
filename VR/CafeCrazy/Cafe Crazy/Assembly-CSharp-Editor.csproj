@@ -74,8 +74,8 @@
      <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_LiveWindow.cs" />
      <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_PostProcessBuild.cs" />
      <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Skeleton_PoserEditor.cs" />
+     <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
-     <None Include="Assets\ASSETS\TreePack1_Free\Read Me.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\Materials\LightCone.shader" />
@@ -83,8 +83,8 @@
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\HighlighGlobal.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
-     <None Include="Assets\ASSETS\SKYBOX\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
-     <None Include="Assets\ASSETS\FREE Food Pack\Shaders\Food.shader" />
+     <None Include="Assets\EXTRA\SKYBOX\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
+     <None Include="Assets\EXTRA\FREE Food Pack\Shaders\Food.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
      <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
