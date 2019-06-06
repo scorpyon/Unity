@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.foodfrenzy.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "G:\\Unity\\2019 Projects\\Food Frenzy\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Food Frenzy [Testing]"
+        }
+      }
+    }
+  ]
+}
