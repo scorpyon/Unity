@@ -1,89 +1,145 @@
 ﻿using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 using Valve.VR;
-using Valve.VR.InteractionSystem;
 
 public class OpenDoor : MonoBehaviour
 {
-    public Collider Hand = null;
-    public List<Interactable> m_ContactInteractables = new List<Interactable>();
-    
+    public GameObject DoorFrame = null;
+    public List<GameObject> m_ContactHands = new List<GameObject>();
     public SteamVR_Action_Boolean m_GrabAction = null;
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;//which controller
-
-    private Vector3 force;
-    private Vector3 cross;
-    private bool holdingHandle;
-    private float angle;
-    private const float forceMultiplier = 150f;
-
-    public Vector3 DirectionToMoveTowards = new Vector3();
-
-    private void Awake()
+    public Transform Parent = null;
+    public GameObject GrippingHand = null;
+    public bool holdingHandle;
+    public Vector3 Hand = new Vector3();
+    public float HandDistance;
+    public float OldDistanceToFrame = 0.0f;
+    public Transform InitialAttachPoint;
+    private float DeltaMagic
     {
+        get { return 1f; }
     }
 
-    private void Update()
+    void Awake()
     {
-        // Down
-        if (m_GrabAction.GetStateDown(inputSource) && Hand != null)
-        {
-            holdingHandle = true;
-            print(inputSource + " Trigger Down");
-        }
+        transform.parent.GetComponent<Rigidbody>().maxAngularVelocity = 100f;
+    }
 
-        //Up
-        else if (m_GrabAction.GetStateUp(inputSource) && Hand != null)
+    private void FixedUpdate()
+    {
+        if (GrippingHand != null) Hand = GrippingHand.transform.position;
+
+        GameObject handObject = null;
+
+        //Is there an interaction?
+        if (m_ContactHands.Count == 0)
         {
             holdingHandle = false;
-            print(inputSource + " Trigger Up");
+        }
+        else
+        {
+            // Down
+            if (m_GrabAction.GetStateDown(inputSource) && m_ContactHands.Count > 0)
+            {
+                // Which hand is pulling the trigger?
+                if (m_GrabAction.GetStateDown(SteamVR_Input_Sources.LeftHand))
+                {
+                    handObject = GameObject.Find("LeftHand");
+                }
+                else if (m_GrabAction.GetStateDown(SteamVR_Input_Sources.RightHand))
+                {
+                    handObject = GameObject.Find("RightHand");
+                }
+
+                if (handObject != null)
+                {
+                    // If not already holding the door handle then hold it now
+                    if (GrippingHand == null)
+                    {
+                        GrippingHand = handObject;
+                        holdingHandle = true;
+                        InitialAttachPoint = GrippingHand.transform;
+                    }
+                }
+            }
+            //Up
+            else if (m_GrabAction.GetStateUp(inputSource))
+            {
+                // Which hand is releasing the trigger?
+                if (m_GrabAction.GetStateUp(SteamVR_Input_Sources.LeftHand))
+                {
+                    handObject = GameObject.Find("LeftHand");
+                }
+                else if (m_GrabAction.GetStateUp(SteamVR_Input_Sources.RightHand))
+                {
+                    handObject = GameObject.Find("RightHand");
+                }
+
+                if (GrippingHand != null && handObject == GrippingHand)
+                {
+                    holdingHandle = false;
+                    GrippingHand = null;
+                    OldDistanceToFrame = 0;
+                    HandDistance = 0;
+                    InitialAttachPoint = null;
+                    GetComponentInParent<Transform>().GetComponentInParent<Rigidbody>().angularVelocity = Vector3.zero;
+                }
+            }
         }
 
-        if(holdingHandle && Hand != null)
+        //// Distance from handle to Hand
+        //if (GrippingHand != null)
+        //{
+        //    HandDistance = Vector3.Distance(DoorFrame.transform.position, GrippingHand.transform.position);
+        //}
+
+        
+        if (holdingHandle && GrippingHand != null) 
             MoveDoor();
     }
 
     public void MoveDoor()
     {
-        DirectionToMoveTowards = Hand.transform.position - transform.position;
+        Vector3 PositionDelta = (GrippingHand.transform.position - InitialAttachPoint.position) * DeltaMagic;
+        transform.parent.GetComponent<Rigidbody>().AddForceAtPosition(PositionDelta, InitialAttachPoint.position, ForceMode.VelocityChange);
 
+        //if (newDistance >= HandleDistance)
+        //{
+        //    HandleDistance = newDistance;
 
+        //    if (GrippingHand.transform.position.x > transform.position.x && GrippingHand.transform.position.z < transform.position.z)
+        //    {
+        //        Parent = transform.parent.parent;
+        //        Parent.Rotate(0, 0, 2, Space.Self);
+        //    }
+        //    else if (GrippingHand.transform.position.x < transform.position.x && GrippingHand.transform.position.z > transform.position.z)
+        //    {
+        //        Parent = transform.parent.parent;
+        //        Parent.Rotate(0, 0, -2, Space.Self);
+        //    }
+        //}
 
-        
+        //var smooth = 2.0f;
+        //var movement = 0.0f;
+        //if (HandDistance > OldDistanceToFrame)
+        //{
+        //    movement = -90.0f;
+        //    OldDistanceToFrame = HandDistance;
+        //}
+        //Parent = transform.parent.parent;
+        //GetComponentInParent<Transform>().GetComponentInParent<Rigidbody>().angularVelocity = Vector3.zero;
+        //Parent.transform.localEulerAngles = new Vector3(
+        //    Parent.transform.localEulerAngles.x, 
+        //    Mathf.LerpAngle(Parent.transform.localEulerAngles.y, movement, Time.deltaTime * smooth),
+        //    Parent.transform.localEulerAngles.z);
     }
-
-
-    private Interactable GetNearestInteractable()
-    {
-        return null;
-    }
-
-    //public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;//which controller
-    //private GameObject Hand { get; set; }
-    //private Collider Collider { get; set; }
-
-    //private Vector3 force;
-    //private Vector3 cross;
-    //private bool holdingHandle;
-    //private float angle;
-    //private const float forceMultiplier = 150f;
-
-    //public void OnCollisionEnter(Collision collision)
-    //{
-    //    Collider = collision.collider;
-    //    Debug.Log("Collision Triggered..");
-    //    if (Collider == Hand)
-    //    {
-    //        Debug.Log("Collider was the Hand");
-    //    }
-    //}
 
     public void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.CompareTag("Hand"))
         {
-            Debug.Log("Trigger Entered..");
-            if(Hand == null) Hand = otherCollider;
+            m_ContactHands.Add(otherCollider.gameObject);
         }
     }
 
@@ -91,71 +147,7 @@ public class OpenDoor : MonoBehaviour
     {
         if (otherCollider.gameObject.CompareTag("Hand"))
         {
-            Debug.Log("Trigger Exited..");
-            Hand = null;
+            m_ContactHands.Remove(otherCollider.gameObject);
         }
     }
-
-    void OnEnable()
-    {
-        //if (m_GrabAction != null)
-        //{
-        //    Hand = GameObject.Find(inputSource == SteamVR_Input_Sources.LeftHand ? SteamVR_Input_Sources.LeftHand.ToString() : SteamVR_Input_Sources.RightHand.ToString());
-        //    if (Collider != null && Collider.gameObject == Hand)
-        //    {
-        //        Debug.Log("Grabbing....");
-        //        m_GrabAction.AddOnChangeListener(OnTriggerPressedOrReleased, inputSource);
-        //    }
-        //}
-    }
-
-    //private void OnDisable()
-    //{
-    //    if (m_GrabAction != null)
-    //    {
-    //        m_GrabAction.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
-    //    }
-    //}
-
-    //private void OnTriggerPressedOrReleased(SteamVR_Action_Boolean triggerAction, SteamVR_Input_Sources actionSource, bool newState)
-    //{
-    //    holdingHandle = newState;
-
-    //    if (holdingHandle)
-    //    {
-    //        holdingHandle = true;
-
-    //        // Direction vector from the door's pivot point to the hand's current position
-    //        Vector3 doorPivotToHand = Hand.transform.position - transform.parent.position;
-
-    //        // Ignore the y axis of the direction vector
-    //        doorPivotToHand.y = 0;
-
-    //        // Direction vector from door handle to hand's current position
-    //        force = Hand.transform.position - transform.position;
-
-    //        // Cross product between force and direction. 
-    //        cross = Vector3.Cross(doorPivotToHand, force);
-    //        angle = Vector3.Angle(doorPivotToHand, force);
-    //    }
-    //    else
-    //    {
-    //        OnHandHoverEnd();
-    //    }
-    //}
-
-    //public void Update()
-    //{
-    //    if (holdingHandle)
-    //    {
-    //        // Apply cross product and calculated angle to
-    //        GetComponentInParent<Rigidbody>().angularVelocity = cross * angle * forceMultiplier;
-    //    }
-    //}
-
-    //private void OnHandHoverEnd()
-    //{
-    //    // Set angular velocity to zero if the hand stops hovering
-    //    GetComponentInParent<Rigidbody>().angularVelocity = Vector3.zero;
-    //}
 }

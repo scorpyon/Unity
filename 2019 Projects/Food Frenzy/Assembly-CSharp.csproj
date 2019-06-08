@@ -66,6 +66,8 @@
     <Compile Include="Assets\Models\HANDS\HandGrabbing.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GrabScript.cs" />
+    <Compile Include="Assets\Scripts\HoldRotation.cs" />
+    <Compile Include="Assets\Scripts\Interact.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <None Include="Assets\EXTRA\SKYBOX\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\EXTRA\FREE Food Pack\Shaders\Food.shader" />
