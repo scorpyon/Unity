@@ -1,5 +1,3 @@
-G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Assembly-CSharp.dll
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Assembly-CSharp.pdb
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
@@ -221,6 +219,8 @@ G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Unity.TextMeshPro.pdb
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Unity.Analytics.DataPrivacy.pdb
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.pdb
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\nunit.framework.xml
+G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.dll
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\Assembly-CSharp.pdb

@@ -7,8 +7,9 @@ using Valve.VR.InteractionSystem;
 public class DoorState : MonoBehaviour
 {
     private Quaternion _yRotationOrigin;
-    private float YAngle = 0.0f;
-    private const float Smooth = 2.0f;
+    public float YAngle = 0.0f;
+    private const float Smooth = 6.0f;
+    private bool doorOpen = false;
 
     void Start()
     {
@@ -20,13 +21,20 @@ public class DoorState : MonoBehaviour
     {
         YAngle = transform.rotation.y;
 
-        if (YAngle < 0)
+        if (YAngle < -0.71)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, _yRotationOrigin, Time.deltaTime * Smooth);
+            doorOpen = true;
         }
-        if (YAngle > -0.01)
+        if (YAngle > -0.71)
         {
             transform.rotation = _yRotationOrigin;
+            YAngle = -0.7f;
+            if (doorOpen)
+            {
+                GetComponent<CircularDrive>().outAngle = YAngle;
+                doorOpen = false;
+            }
         }
     }
 }

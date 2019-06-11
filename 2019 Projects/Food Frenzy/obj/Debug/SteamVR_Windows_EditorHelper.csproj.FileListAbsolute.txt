@@ -207,7 +207,6 @@ G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Boo.Lang.Parser.dll
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Boo.Lang.Useful.dll
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Unity.CecilTools.dll
 G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\nunit.framework.xml
-G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csprojAssemblyReference.cache
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csproj.CoreCompileInputs.cache
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csproj.CopyComplete
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.dll

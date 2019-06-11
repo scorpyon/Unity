@@ -2925,6 +2925,7 @@ GameObject:
   - component: {fileID: 109482768}
   - component: {fileID: 109482770}
   - component: {fileID: 109482771}
+  - component: {fileID: 109482772}
   m_Layer: 0
   m_Name: door_hinge
   m_TagString: Interactable
@@ -2963,7 +2964,7 @@ MonoBehaviour:
   axisOfRotation: 1
   childCollider: {fileID: 8296172667935996142}
   linearMapping: {fileID: 0}
-  hoverLock: 0
+  hoverLock: 1
   limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
@@ -3038,7 +3039,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   snapAttachEaseInTime: 0.15
-  snapAttachEaseInCompleted: 1
+  snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
   highlightOnHover: 0
@@ -3071,6 +3072,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &109482772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109482766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.6, z: 0.02}
+  m_Center: {x: 0.21, y: -0.05, z: 0}
 --- !u!1 &151244688
 GameObject:
   m_ObjectHideFlags: 0
@@ -22532,8 +22546,9 @@ GameObject:
   - component: {fileID: 865181160}
   - component: {fileID: 865181163}
   - component: {fileID: 865181162}
-  - component: {fileID: 865181161}
   - component: {fileID: 865181164}
+  - component: {fileID: 865181161}
+  - component: {fileID: 865181165}
   m_Layer: 0
   m_Name: door_hinge2
   m_TagString: Interactable
@@ -22584,7 +22599,7 @@ MonoBehaviour:
   axisOfRotation: 1
   childCollider: {fileID: 626033908}
   linearMapping: {fileID: 0}
-  hoverLock: 0
+  hoverLock: 1
   limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
@@ -22680,6 +22695,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &865181165
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865181159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.6, z: 0.02}
+  m_Center: {x: 0.21, y: -0.05, z: 0}
 --- !u!1001 &867672583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31063,7 +31091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  gameTimeRemaining: 0
+  gameTimer: 0
 --- !u!1 &1228290129
 GameObject:
   m_ObjectHideFlags: 0
