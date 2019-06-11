@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int score;
-    public int gameTimeRemaining;
+    public float gameTimer;
 
     void Awake()
     {
@@ -28,12 +28,24 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Do Nothing
+        gameTimer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Do Nothing
+        gameTimer += Time.deltaTime;
+
+    }
+
+    public void AddToScore(int amount)
+    {
+        score += amount;
+    }
+
+    public void RemoveFromScore(int amount)
+    {
+        score -= amount;
+        if (score < 0) score = 0;
     }
 }
