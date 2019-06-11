@@ -24,14 +24,14 @@ public class GrabScript : MonoBehaviour
         // Down
         if (m_GrabAction.GetStateDown(m_Pose.inputSource))
         {
-            print(m_Pose.inputSource + " Trigger Down");
+            //print(m_Pose.inputSource + " Trigger Down");
             Pickup();
         }
 
         //Up
         else if (m_GrabAction.GetStateUp(m_Pose.inputSource))
         {
-            print(m_Pose.inputSource + " Trigger Up");
+            //print(m_Pose.inputSource + " Trigger Up");
             Drop();
         }
     }
@@ -59,7 +59,7 @@ public class GrabScript : MonoBehaviour
 
     public void Drop()
     {
-
+        m_Joint.connectedBody = null;
     }
 
     private Interactable GetNearestInteractable()
