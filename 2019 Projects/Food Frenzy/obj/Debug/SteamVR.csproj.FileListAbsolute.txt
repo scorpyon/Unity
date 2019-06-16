@@ -207,3 +207,7 @@ G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR.csproj.CoreCompileInputs.ca
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR.csproj.CopyComplete
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR.dll
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR.pdb
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.iOS.Extensions.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.UWP.Extensions.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Mono.Posix.dll

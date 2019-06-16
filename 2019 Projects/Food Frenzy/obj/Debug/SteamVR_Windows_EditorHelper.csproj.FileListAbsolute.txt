@@ -211,3 +211,8 @@ G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csproj
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csproj.CopyComplete
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.dll
 G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.pdb
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.iOS.Extensions.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.UWP.Extensions.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+G:\Unity\2019 Projects\Food Frenzy\Temp\bin\Debug\Mono.Posix.dll
+G:\Unity\2019 Projects\Food Frenzy\obj\Debug\SteamVR_Windows_EditorHelper.csprojAssemblyReference.cache
