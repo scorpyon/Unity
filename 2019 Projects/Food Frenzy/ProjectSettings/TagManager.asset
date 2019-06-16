@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Hand
+  - Button
   layers:
   - Default
   - TransparentFX
