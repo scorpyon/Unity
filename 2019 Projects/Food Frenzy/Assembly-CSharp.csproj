@@ -199,10 +199,12 @@
     <Compile Include="Assets\HTC.UnityPlugin\VRModule\VRModuleManager.cs" />
     <Compile Include="Assets\Models\HANDS\HandAnimation.cs" />
     <Compile Include="Assets\Models\HANDS\HandGrabbing.cs" />
+    <Compile Include="Assets\Scripts\BurgerState.cs" />
     <Compile Include="Assets\Scripts\Button_control.cs" />
     <Compile Include="Assets\Scripts\Button_foodomatic.cs" />
     <Compile Include="Assets\Scripts\DoorState.cs" />
     <Compile Include="Assets\Scripts\DoorState_reverse.cs" />
+    <Compile Include="Assets\Scripts\FryingPanControl.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GrabScript.cs" />
     <Compile Include="Assets\Scripts\HoldRotation.cs" />
@@ -212,37 +214,37 @@
     <None Include="Assets\EXTRA\SKYBOX\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\EXTRA\FREE Food Pack\Shaders\Food.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -428,16 +430,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>G:/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/PERSONAL/Unity/2019 Projects/Food Frenzy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
