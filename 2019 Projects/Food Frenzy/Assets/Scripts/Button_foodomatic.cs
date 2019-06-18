@@ -10,6 +10,8 @@ public class Button_foodomatic : MonoBehaviour
     private bool stage3Complete = false;
     private bool stage4Complete = false;
     private bool stage5Complete = false;
+    private bool stage6Complete = false;
+    private bool stage7Complete = false;
 
     public GameObject FoodOMaticWallPiece;
     public GameObject FoodOMatic;
@@ -49,6 +51,8 @@ public class Button_foodomatic : MonoBehaviour
                 stage3Complete = true;
                 stage4Complete = true;
                 stage5Complete = true;
+                stage6Complete = true;
+                stage7Complete = true;
 
                 isActive = false; 
             }
@@ -59,6 +63,8 @@ public class Button_foodomatic : MonoBehaviour
                 stage3Complete = false;
                 stage4Complete = false;
                 stage5Complete = false;
+                stage6Complete = false;
+                stage7Complete = false;
 
                 isActive = true;
             }
@@ -119,10 +125,46 @@ public class Button_foodomatic : MonoBehaviour
                 }
                 else stage5Complete = true;
             }
+            else if (!stage6Complete)
+            {
+                var foodWallPiecePos = FoodOMaticWallPiece.transform.position;
+                if (foodWallPiecePos.y < FoodOMaticWallPiece_Origin.y)
+                {
+                    FoodOMaticWallPiece.transform.position = new Vector3(foodWallPiecePos.x, foodWallPiecePos.y + wallMoveSpeedVertical, foodWallPiecePos.z);
+                }
+                else stage6Complete = true;
+            }
+            else if (!stage7Complete)
+            {
+                var foodWallPiecePos = FoodOMaticWallPiece.transform.position;
+                if (foodWallPiecePos.x > FoodOMaticWallPiece_Origin.x)
+                {
+                    FoodOMaticWallPiece.transform.position = new Vector3(foodWallPiecePos.x - wallMoveSpeedHorizontal, foodWallPiecePos.y, foodWallPiecePos.z);
+                }
+                else stage7Complete = true;
+            }
         }
         else
         {
-            if (stage5Complete)
+            if (stage7Complete)
+            {
+                var foodWallPiecePos = FoodOMaticWallPiece.transform.position;
+                if (foodWallPiecePos.x < FoodOMaticWallPiece_Origin.x + 0.1f)
+                {
+                    FoodOMaticWallPiece.transform.position = new Vector3(foodWallPiecePos.x + wallMoveSpeedHorizontal, foodWallPiecePos.y, foodWallPiecePos.z);
+                }
+                else stage7Complete = false;
+            }
+            else if (stage6Complete)
+            {
+                var foodWallPiecePos = FoodOMaticWallPiece.transform.position;
+                if (foodWallPiecePos.y > FoodOMaticWallPiece_Origin.y - 0.4f)
+                {
+                    FoodOMaticWallPiece.transform.position = new Vector3(foodWallPiecePos.x, foodWallPiecePos.y - wallMoveSpeedVertical, foodWallPiecePos.z);
+                }
+                else stage6Complete = false;
+            }
+            else if (stage5Complete)
             {
                 var doorPos = Door.transform.localEulerAngles;
                 if (doorPos.x > Door_Origin.x || Math.Abs(doorPos.x) < 0.2f)

@@ -7,6 +7,10 @@ TagManager:
   - Interactable
   - Hand
   - Button
+  - projectile
+  - burger_raw
+  - burger_cooked
+  - burger_burnt
   layers:
   - Default
   - TransparentFX
