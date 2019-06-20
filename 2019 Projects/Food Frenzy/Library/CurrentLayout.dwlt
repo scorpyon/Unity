@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 332, y: 272}
   m_MaxSize: {x: 14002, y: 10022}
   vertical: 0
-  controlID: 75
+  controlID: 138
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 18002, y: 14044}
   vertical: 0
-  controlID: 111
+  controlID: 174
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 1
-  controlID: 117
+  controlID: 60
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 118
+  controlID: 61
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85449,20 +85449,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/SteamVR/InteractionSystem/Core/Scripts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/SteamVR/InteractionSystem/Core/Scripts
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: G:\Unity\2019 Projects\Food Frenzy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 846}
-    m_SelectedIDs: 8a740000
-    m_LastClickedID: 29834
-    m_ExpandedIDs: 00000000686f00003a700000d6700000047100007c7100008a7100002473000056740000c67500002a7600001077000058780000aa780000107900003a79000000ca9a3b
+    scrollPos: {x: 0, y: 478}
+    m_SelectedIDs: 80340000
+    m_LastClickedID: 13440
+    m_ExpandedIDs: 000000003a2e0000a8300000643100001e32000032320000e6340000583a0000de3a0000d83f00007c4000001641000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -85490,7 +85490,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000686f0000d6700000047100007c7100008a71000024730000c67500002a76000058780000aa78000010790000
+    m_ExpandedIDs: 000000003a2e0000a8300000643100001e32000032320000e6340000583a0000de3a0000d83f00007c40000016410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -85542,7 +85542,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 289}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 227
 --- !u!114 &20
@@ -85609,10 +85609,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 390}
-      m_SelectedIDs: 82b0feff
-      m_LastClickedID: -85886
-      m_ExpandedIDs: a8b0feff80f2feff5608ffff8a08fffffa08ffffca0affff640bffff980bffffe00bffff0e0fffff1210ffff4610ffff8c11ffff0a12ffffba13ffff0214ffff4814ffffe415ffff9417ffff141affffb01bffff881dffff941fffffa61fffffee1fffffbc20ffff5822ffffb422fffffc22ffff5625ffff8a25ffff2627ffff5a27ffff682affffd02affff6c2cffffa02cffff2a2effff5e2effff662fffff0231ffff3631ffff7431ffff6c7900007e7d0000327f000024800000848100002a820000c2830000
+      scrollPos: {x: 0, y: 278}
+      m_SelectedIDs: f2d0ffff
+      m_LastClickedID: -12046
+      m_ExpandedIDs: 8efbfffff4ffffff2a430000344600007c47000010480000624a0000e64b00008c4c0000844e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -85672,9 +85672,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.42591316, y: 1.0745726, z: -0.71925974}
+    m_Target: {x: 0.53212684, y: 0.9806964, z: -0.61831}
     speed: 2
-    m_Value: {x: 0.42591316, y: 1.0745726, z: -0.71925974}
+    m_Value: {x: 0.53212684, y: 0.9806964, z: -0.61831}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -85703,13 +85703,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.062558055, y: 0.9265388, z: -0.17809406, w: 0.32545388}
+    m_Target: {x: 0.03662972, y: 0.94739825, z: -0.29555517, w: 0.117400676}
     speed: 2
-    m_Value: {x: 0.062557265, y: 0.92652714, z: -0.17809181, w: 0.32544976}
+    m_Value: {x: 0.03662897, y: 0.9473788, z: -0.29554912, w: 0.11739827}
   m_Size:
-    m_Target: 0.3763513
+    m_Target: 0.9864997
     speed: 2
-    m_Value: 0.076351285
+    m_Value: 0.9864997
   m_Ortho:
     m_Target: 0
     speed: 2

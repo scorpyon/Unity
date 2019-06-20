@@ -204,6 +204,7 @@
     <Compile Include="Assets\Scripts\Button_foodomatic.cs" />
     <Compile Include="Assets\Scripts\DoorState.cs" />
     <Compile Include="Assets\Scripts\DoorState_reverse.cs" />
+    <Compile Include="Assets\Scripts\FryingPan_Base_Control.cs" />
     <Compile Include="Assets\Scripts\FryingPanControl.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GrabScript.cs" />
